@@ -1,0 +1,1388 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="hexo博客搭建及美化, xueNayukino">
+    <meta name="description" content="为了方便我们这里使用 “Visual Studio Code”打开文件
+将博客改为中文目录：E:\IsQiyaBlog将 “ _config.yml “ 文件中代码段 language: en 改为 language: zh-CN
+修改主题">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>hexo博客搭建及美化 | xueNayukino</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    
+
+
+    <!-- bg-cover style     -->
+
+
+
+<link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+<link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+<link rel="stylesheet" type="text/css" href="/css/matery.css">
+<link rel="stylesheet" type="text/css" href="/css/my.css">
+<link rel="stylesheet" type="text/css" href="/css/dark.css" media="none" onload="if(media!='all')media='all'">
+
+
+
+
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+    <link rel="stylesheet" href="/css/post.css">
+
+
+
+
+    
+        <link rel="stylesheet" type="text/css" href="/css/reward.css">
+    
+
+
+
+    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+      <!-- 今日诗词特效 -->
+      <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+
+
+
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="xueNayukino" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">xueNayukino</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+  <li>
+    <a href="javascript:;" class="waves-effect waves-light" onclick="switchNightMode()" title="深色/浅色模式" >
+      <i id="sum-moon-icon" class="fas fa-sun" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">xueNayukino</div>
+        <div class="logo-desc">
+            
+            我有长缨在手，何时缚住苍龙
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">hexo博客搭建及美化</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2022-11-22
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <p>为了方便我们这里使用 “Visual Studio Code”打开文件</p>
+<h2 id="将博客改为中文"><a href="#将博客改为中文" class="headerlink" title="将博客改为中文"></a>将博客改为中文</h2><h4 id="目录：E-IsQiyaBlog"><a href="#目录：E-IsQiyaBlog" class="headerlink" title="目录：E:\IsQiyaBlog"></a>目录：E:\IsQiyaBlog</h4><p>将 “ _config.yml “ 文件中代码段 language: en 改为 language: zh-CN</p>
+<h2 id="修改主题菜单栏"><a href="#修改主题菜单栏" class="headerlink" title="修改主题菜单栏"></a>修改主题菜单栏</h2><p>将它们填上内容</p>
+<h4 id="新建分类-categories-页："><a href="#新建分类-categories-页：" class="headerlink" title="新建分类 categories 页："></a>新建分类 categories 页：</h4><ol>
+<li>hexo new page “categories”</li>
+</ol>
+<h4 id="目录：E-IsQiyaBlog-source-categories"><a href="#目录：E-IsQiyaBlog-source-categories" class="headerlink" title="目录：E:\IsQiyaBlog\source\categories"></a>目录：E:\IsQiyaBlog\source\categories</h4><p>在 “index.md” 文件中配置下面相关配置</p>
+<h5 id="应用分类标签："><a href="#应用分类标签：" class="headerlink" title="应用分类标签："></a>应用分类标签：</h5><h4 id="目录：E-IsQiyaBlog-source-posts"><a href="#目录：E-IsQiyaBlog-source-posts" class="headerlink" title="目录：E:\IsQiyaBlog\source\ _posts"></a>目录：E:\IsQiyaBlog\source\ _posts</h4><p>在 “hello-world.md” 文件中修改，将这篇文章分类为说明</p>
+<p><strong>类似的配置还有:</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">配置选项</th>
+<th align="center">描述</th>
+<th align="left">代码</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">tag</td>
+<td align="center">标签</td>
+<td align="left">hexo new page “tags”</td>
+</tr>
+<tr>
+<td align="center">—</td>
+<td align="center"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">title: tags</td>
+<td align="center"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">date: 2018-09-30 18:23:38</td>
+<td align="center"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">type: “tags”</td>
+<td align="center"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">layout: “tags”</td>
+<td align="center"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">—</td>
+<td align="center"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">about</td>
+<td align="center">关于</td>
+<td align="left">hexo new page “about”</td>
+</tr>
+<tr>
+<td align="center">—</td>
+<td align="center"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">title: about</td>
+<td align="center"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">date: 2018-09-30 18:23:38</td>
+<td align="center"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">type: “about “</td>
+<td align="center"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">layout: “about “</td>
+<td align="center"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">—</td>
+<td align="center"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">contact</td>
+<td align="center">留言板</td>
+<td align="left">hexo new page “contact “</td>
+</tr>
+<tr>
+<td align="center">—</td>
+<td align="center"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">title: tags</td>
+<td align="center"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">date: 2018-09-30 18:23:38</td>
+<td align="center"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">type: “about “</td>
+<td align="center"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">layout: “about “</td>
+<td align="center"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">—</td>
+<td align="center"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">friends</td>
+<td align="center">友情链接</td>
+<td align="left">hexo new page “friends “</td>
+</tr>
+<tr>
+<td align="center">—</td>
+<td align="center"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">title: tags</td>
+<td align="center"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">date: 2018-09-30 18:23:38</td>
+<td align="center"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">type: “tags”</td>
+<td align="center"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">layout: “about “</td>
+<td align="center"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">—</td>
+<td align="center"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">404</td>
+<td align="center">404页面</td>
+<td align="left">hexo new page 404</td>
+</tr>
+<tr>
+<td align="center">—</td>
+<td align="center"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">title: 404</td>
+<td align="center"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">date: 2018-09-30 18:23:38</td>
+<td align="center"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">type: “404”</td>
+<td align="center"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">layout: “404”</td>
+<td align="center"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">description: “Oops～，我崩溃了！找不到你想要的页面 😦”</td>
+<td align="center"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">—</td>
+<td align="center"></td>
+<td align="left"></td>
+</tr>
+</tbody></table>
+<h2 id="修改主题站点运行时间"><a href="#修改主题站点运行时间" class="headerlink" title="修改主题站点运行时间"></a>修改主题站点运行时间</h2><h4 id="目录：E-IsQiyaBlog-themes-matery"><a href="#目录：E-IsQiyaBlog-themes-matery" class="headerlink" title="目录：E:\IsQiyaBlog\themes\matery"></a>目录：E:\IsQiyaBlog\themes\matery</h4><p>将 “ _config.yml “ 文件中代码段改</p>
+<h2 id="修改主题站名"><a href="#修改主题站名" class="headerlink" title="修改主题站名"></a>修改主题站名</h2><h4 id="目录：E-IsQiyaBlog-1"><a href="#目录：E-IsQiyaBlog-1" class="headerlink" title="目录：E:\IsQiyaBlog"></a>目录：E:\IsQiyaBlog</h4><p>(title和author改为自己)</p>
+<h2 id="添加搜索查找插件"><a href="#添加搜索查找插件" class="headerlink" title="添加搜索查找插件"></a>添加搜索查找插件</h2><h4 id="安装命令："><a href="#安装命令：" class="headerlink" title="安装命令："></a>安装命令：</h4><p>·npm install hexo-generator-search –save·</p>
+<p>在目录：E:\IsQiyaBlog下， “_config.yml “ 文件中新增代码：</p>
+<pre><code>search:
+  path: search.xml
+  field: post
+</code></pre>
+<h2 id="文章字数统计插件"><a href="#文章字数统计插件" class="headerlink" title="文章字数统计插件"></a>文章字数统计插件</h2><h4 id="安装命令：-1"><a href="#安装命令：-1" class="headerlink" title="安装命令："></a>安装命令：</h4><p><code>npm i --save hexo-wordcount</code></p>
+<p>在目录：E:\IsQiyaBlog下， “_config.yml “ 文件中新增代码：</p>
+<pre><code>postInfo:
+  date: true
+  update: false
+  wordCount: false # 设置文章字数统计为 true.
+  totalCount: false # 设置站点文章总字数统计为 true.
+  min2read: false # 阅读时长.
+  readCount: false # 阅读次数.
+</code></pre>
+<p>打开功能</p>
+<h2 id="修改社交链接"><a href="#修改社交链接" class="headerlink" title="修改社交链接"></a>修改社交链接</h2><p>在目录：E:\IsQiyaBlog\themes\matery\layout_partial下， “social-link.ejs “ 文件中新增代码：</p>
+<pre><code>&lt;% if (theme.socialLink.github) &#123; %&gt;
+    &lt;a href=&quot;&lt;%= theme.socialLink.CSDN %&gt;&quot; class=&quot;tooltipped&quot; target=&quot;_blank&quot; data-tooltip=&quot;访问我的CSDN&quot; data-position=&quot;top&quot; data-delay=&quot;50&quot;&gt;
+        &lt;i class=&quot;fab fa-CSDN&quot;&gt;c&lt;/i&gt;
+    &lt;/a&gt;
+&lt;% &#125; %&gt;
+</code></pre>
+<p>添加到目录：E:\IsQiyaBlog\themes\matery， “_config.yml “ 文件中</p>
+<h2 id="去掉右上角的猫"><a href="#去掉右上角的猫" class="headerlink" title="去掉右上角的猫"></a>去掉右上角的猫</h2><p>在目录：E:\IsQiyaBlog\themes\matery下， “_config.yml “ 文件中修改代码：</p>
+<p>(约350 githublink:)</p>
+<h2 id="去掉主页的第二个按钮"><a href="#去掉主页的第二个按钮" class="headerlink" title="去掉主页的第二个按钮"></a>去掉主页的第二个按钮</h2><p>(那个github按键)<br>(约 125 行 indexbtn和name)</p>
+<h2 id="打赏图片"><a href="#打赏图片" class="headerlink" title="打赏图片"></a>打赏图片</h2><p>目录：E:\IsQiyaBlog\themes\matery\source\medias\reward中的图片换成自己的图片即可，注意名字也要换成一样的</p>
+<h2 id="安装代码高亮插件"><a href="#安装代码高亮插件" class="headerlink" title="安装代码高亮插件"></a>安装代码高亮插件</h2><h4 id="安装代码："><a href="#安装代码：" class="headerlink" title="安装代码："></a>安装代码：</h4><p><code>npm i -S hexo-prism-plugin</code></p>
+<p>在目录：E:\IsQiyaBlog下， “_config.yml “ 文件中修改代码：</p>
+<p>在目录：E:\IsQiyaBlog下， “_config.yml “ 文件中新增代码：</p>
+<p>#代码高亮</p>
+<pre><code>prism_plugin:
+  mode: &#39;preprocess&#39;    # realtime/preprocess
+  theme: &#39;tomorrow&#39;
+  line_number: false    # default false
+  custom_css:
+</code></pre>
+<h2 id="添加友情链接"><a href="#添加友情链接" class="headerlink" title="添加友情链接"></a>添加友情链接</h2><p>在目录 E:\IsQiyaBlog\source 下创建 “ _data”文件夹 ，并在文件夹中创建 “ friends.json “文件</p>
+<p>在” friends.json “文件中填写形式如下：</p>
+<pre><code>[&#123;
+    &quot;avatar&quot;: &quot;http://image.luokangyuan.com/4027734.jpeg&quot;,
+    &quot;name&quot;: &quot;闪烁之狐&quot;,
+    &quot;introduction&quot;: &quot;编程界大佬，技术牛，人还特别好，不懂的都可以请教大佬&quot;,
+    &quot;url&quot;: &quot;https://blinkfox.github.io/&quot;,
+    &quot;title&quot;: &quot;前去学习&quot;
+&#125;, &#123;
+    &quot;avatar&quot;: &quot;https://qinng.now.sh/medias/avatar.jpg&quot;,
+    &quot;name&quot;: &quot;有风自南&quot;,
+    &quot;introduction&quot;: &quot;也无风雨也无晴&quot;,
+    &quot;url&quot;: &quot;https://qingwave.github.io/&quot;,
+    &quot;title&quot;: &quot;前去学习&quot;
+&#125;]
+</code></pre>
+<h2 id="修改页脚"><a href="#修改页脚" class="headerlink" title="修改页脚"></a>修改页脚</h2><p>目录：E:\IsQiyaBlog\themes\matery\layout_partial ， footer.ejs文件下<br>(删掉16行开始的&amp;nbsp)</p>
+<h2 id="天气插件"><a href="#天气插件" class="headerlink" title="天气插件"></a>天气插件</h2><p>来自于：</p>
+<p><strong>文章链接: <a target="_blank" rel="noopener" href="https://blog.nmslwsnd.com/matery-zhu-ti-she-zhi/">https://blog.nmslwsnd.com/matery-zhu-ti-she-zhi/</a></strong></p>
+<p>在 E:\IsQiyaBlog\themes\matery\layout_widget 新建文件 weather.ejs，把代码添加进入,可以设置只有桌面端显示,如下修改:</p>
+<pre><code>&lt;!-- 天气接口--&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    WIDGET = &#123;FID: &#39;1tFpFZ5Mtj&#39;&#125;
+  &lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    //只在桌面版网页启用特效
+    var windowWidth = $(window).width();
+    if (windowWidth &gt; 768) &#123;
+        document.write(&#39;&lt;script type=&quot;text/javascript&quot; src=&quot;https://apip.weatherdt.com/float/static/js/r.js?v=1111&quot;&gt;&lt;\/script&gt;&#39;);
+        &#125;
+  &lt;/script&gt;
+</code></pre>
+<p>然后在 “ E:\IsQiyaBlog\themes\matery\layout “ layout.ejs 文件中添加 下面这串代码：</p>
+<pre><code>&lt;!-- 天气接口 --&gt;
+    &lt;% if (theme.weather.enable) &#123; %&gt;
+        &lt;%- partial(&#39;_widget/weather&#39;) %&gt;
+      &lt;% &#125; %&gt;
+</code></pre>
+<p>然后在 E:\IsQiyaBlog\themes\matery 文件中 _config.yml 中再添加一个下面这串代码：</p>
+<pre><code># 是否激活天气接口
+weather:
+  enable: true
+</code></pre>
+<h2 id="关闭首页蒙版效果"><a href="#关闭首页蒙版效果" class="headerlink" title="关闭首页蒙版效果"></a>关闭首页蒙版效果</h2><p>在 E:\IsQiyaBlog\themes\matery\source\css 中 matery.css 文件中修改（注释） ：<br>(将@-webkit-keyframes rainbow和@keyframes rainbow里面内容注释)</p>
+<h2 id="动态标签栏"><a href="#动态标签栏" class="headerlink" title="动态标签栏"></a>动态标签栏</h2><p>在目录：E:\IsQiyaBlog\themes\matery\layout 下 layout.ejs 文件中新增下面这串代码：</p>
+<pre><code>  &lt;!-- 动态标题 --&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt; var OriginTitile = document.title, st; 
+        document.addEventListener(&quot;visibilitychange&quot;, function () &#123; document.hidden ? (document.title = &quot;Σ(っ °Д °;)っ喔哟，崩溃啦！&quot;, clearTimeout(st)) : (document.title = &quot;φ(゜▽゜*)♪咦，又好了！&quot;, st = setTimeout(function () &#123; document.title = OriginTitile &#125;, 3e3)) &#125;) &lt;/script&gt;
+</code></pre>
+<p>效果：</p>
+<h2 id="标题栏透明效果"><a href="#标题栏透明效果" class="headerlink" title="标题栏透明效果"></a>标题栏透明效果</h2><p>目录：E:\IsQiyaBlog\themes\matery\source\css 下 matery.css 文件中修改代码：</p>
+<pre><code>.bg-color &#123;
+    background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+    opacity: 0.8  /* 透明效果 */
+&#125;
+</code></pre>
+<h2 id="永久链接（暂时还没成功）"><a href="#永久链接（暂时还没成功）" class="headerlink" title="永久链接（暂时还没成功）"></a>永久链接（暂时还没成功）</h2><p>安装插件</p>
+<p><code>npm install hexo-abbrlink --save</code><br>在目录 E:\IsQiyaBlog 下 _config.yml 文件中新增：</p>
+<pre><code>#静态链接
+abbrlink:
+    alg: crc16   #算法： crc16(default) and crc32
+    rep: hex     #进制： dec(default) and hex: dec #输出进制：十进制和十六进制，默认为10进制。丨dec为十进制，hex为十六进制
+</code></pre>
+<p>修改：<br>注销有内容的permalink,再将下面那个填posts&#x2F;:abbrlink.html</p>
+<h2 id="添加动态诗词"><a href="#添加动态诗词" class="headerlink" title="添加动态诗词"></a>添加动态诗词</h2><p>参考：<a target="_blank" rel="noopener" href="https://blog.csdn.net/victoryxa/article/details/105841309">https://blog.csdn.net/victoryxa/article/details/105841309</a></p>
+<p>目录 ： E:\IsQiyaBlog\themes\matery\layout_partial\bg-cover-content.ejs下修改代码” <!-- <%= config.description %> -->”变为 ”&lt;%- ‘<span id="jinrishici-sentence">正在加载今日诗词….</span>‘ %&gt;”</p>
+<p>目录 ： E:\IsQiyaBlog\themes\matery\layout_partial\head.ejs下新增代码”</p>
+<pre><code>  &lt;!-- 今日诗词特效 --&gt;
+    &lt;script src=&quot;https://sdk.jinrishici.com/v2/browser/jinrishici.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+</code></pre>
+<p>最后要将目录：E:\IsQiyaBlog\themes\matery_config.yml 文件下主题的subtitle值改为false</p>
+<h2 id="鼠标点击特效"><a href="#鼠标点击特效" class="headerlink" title="鼠标点击特效"></a>鼠标点击特效</h2><p>参考：<a target="_blank" rel="noopener" href="https://blog.csdn.net/victoryxa/article/details/105841309">https://blog.csdn.net/victoryxa/article/details/105841309</a></p>
+<p>在目录：E:\IsQiyaBlog\themes\matery\source\js 下新建 click_show_text.js 文件，在click_show_text.js 中写入代码</p>
+<pre><code>var a_idx = 0;
+jQuery(document).ready(function ($) &#123;
+    $(&quot;body&quot;).click(function (e) &#123;
+        var a = new Array(&quot;富强&quot;, &quot;民主&quot;, &quot;文明&quot;, &quot;和谐&quot;, &quot;自由&quot;, &quot;平等&quot;, &quot;公正&quot;, &quot;法治&quot;, &quot;爱国&quot;, &quot;敬业&quot;, &quot;诚信&quot;, &quot;友善&quot;);
+        var $i = $(&quot;&lt;span/&gt;&quot;).text(a[a_idx]);
+        a_idx = (a_idx + 1) % a.length;
+        var x = e.pageX,
+            y = e.pageY;
+        $i.css(&#123;
+            &quot;z-index&quot;: 5,
+            &quot;top&quot;: y - 20,
+            &quot;left&quot;: x,
+            &quot;position&quot;: &quot;absolute&quot;,
+            &quot;font-weight&quot;: &quot;bold&quot;,
+            &quot;color&quot;: &quot;#FF0000&quot;
+        &#125;);
+        $(&quot;body&quot;).append($i);
+        $i.animate(&#123;
+                &quot;top&quot;: y - 180,
+                &quot;opacity&quot;: 0
+            &#125;,
+            3000,
+            function () &#123;
+                $i.remove();
+            &#125;);
+    &#125;);
+    setTimeout(&#39;delay()&#39;, 2000);
+&#125;);
+
+function delay() &#123;
+    $(&quot;.buryit&quot;).removeAttr(&quot;onclick&quot;);
+&#125;
+</code></pre>
+<p>进入目录：E:\IsQiyaBlog\themes\matery\layout\layout.ejs中新增代码，引用特效</p>
+<pre><code>  &lt;!-- 鼠标点击特效  富强民主文明 --&gt;
+    &lt;script src=&quot;/js/click_show_text.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+<h2 id="自定义鼠标样式"><a href="#自定义鼠标样式" class="headerlink" title="自定义鼠标样式"></a>自定义鼠标样式</h2><p>参考：</p>
+<p>下载鼠标样式 网址为：<a target="_blank" rel="noopener" href="https://www.easyicon.net/">https://www.easyicon.net/</a><br>下载格式：16px ico</p>
+<p>将下载的图片命名为cursor1.ico放到目录：E:\IsQiyaBlog\themes\matery\source\medias下，并在目录：E:\IsQiyaBlog\themes\matery\source\css\my.css文件下新增代码</p>
+<pre><code>*&#123;
+    cursor: url(&quot;/medias/cursor1.ico&quot;),auto!important;
+&#125;
+:active&#123;
+    cursor: url(&quot;/medias/cursor1.ico&quot;),auto!important;
+&#125;
+</code></pre>
+<p>————————————————</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">yukino</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://xueNayukino.github.io/posts/6de0.html">http://xueNayukino.github.io/posts/6de0.html</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">yukino</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/posts/a9a8.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="随笔">
+                        
+                        <span class="card-title">随笔</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-12-29
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            yukino
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/posts/ac0f.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="指针算法">
+                        
+                        <span class="card-title">指针算法</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-11-22
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            yukino
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="503838841"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="/libs/aplayer/Meting.min.js"></script>
+
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2022</span>
+            
+            <a href="/about" target="_blank">yukino</a>
+            <br>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:2104272713@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2104272713" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2104272713" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+
+    <a href="" class="tooltipped" target="_blank" data-tooltip="访问我的CSDN" data-position="top" data-delay="50">
+        <i class="fab fa-CSDN">c</i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 白天和黑夜主题 -->
+<div class="stars-con">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>  
+</div>
+
+<script>
+    function switchNightMode() {
+        $('<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"></div></div>').appendTo($('body')),
+        setTimeout(function () {
+            $('body').hasClass('DarkMode') 
+            ? ($('body').removeClass('DarkMode'), localStorage.setItem('isDark', '0'), $('#sum-moon-icon').removeClass("fa-sun").addClass('fa-moon')) 
+            : ($('body').addClass('DarkMode'), localStorage.setItem('isDark', '1'), $('#sum-moon-icon').addClass("fa-sun").removeClass('fa-moon')),
+            
+            setTimeout(function () {
+            $('.Cuteen_DarkSky').fadeOut(1e3, function () {
+                $(this).remove()
+            })
+            }, 2e3)
+        })
+    }
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    
+
+    
+
+    <!-- 雪花特效 -->
+    
+
+    <!-- 鼠标星星特效 -->
+    
+
+     
+        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+        <script src="/libs/others/TencentCaptcha.js"></script>
+        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
+    
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+    <!-- 天气接口 -->
+    
+        <!-- 天气接口-->
+<script type="text/javascript">
+    WIDGET = {FID: '1tFpFZ5Mtj'}
+  </script>
+<script type="text/javascript">
+    //只在桌面版网页启用特效
+    var windowWidth = $(window).width();
+    if (windowWidth > 768) {
+        document.write('<script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"><\/script>');
+        }
+  </script>
+
+      
+  <!-- 动态标题 -->
+  <script type="text/javascript"> var OriginTitile = document.title, st; 
+    document.addEventListener("visibilitychange", function () { document.hidden ? (document.title = "Σ(っ °Д °;)っ喔哟，崩溃啦！", clearTimeout(st)) : (document.title = "φ(゜▽゜*)♪咦，又好了！", st = setTimeout(function () { document.title = OriginTitile }, 3e3)) }) </script>
+    
+  <!-- 鼠标点击特效  富强民主文明 -->
+  <script src="/js/click_show_text.js"></script>
+
+
+</body>
+
+</html>
